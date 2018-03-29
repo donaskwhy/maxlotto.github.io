@@ -1,0 +1,35 @@
+<h2><strong>799회 당첨결과</strong></h2>
+<h5>(2018년 03월 24일 추첨)</h5>
+<br><h3>당첨 번호는</h3>
+<div class="d-flex justify-content-center">
+<div class="row">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(0)%>.png">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(1)%>.png">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(2)%>.png">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(3)%>.png">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(4)%>.png">
+        <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @draw_numbers.at(5)%>.png">
+</div><br>
+</div>
+
+<h4>보너스 번호는 <img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @bonus_number %>.png"> </h4>
+
+<h3><br>귀하의 번호는<br><br>
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(0)%>.png">
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(1)%>.png">
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(2)%>.png">
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(3)%>.png">
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(4)%>.png">
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= @lotto.at(5)%>.png">
+</h3><br>
+
+<h3>일치하는 개수는 <%= @match_count %></h3>
+
+<% @match_numbers.each do |oneNum| %>
+
+<img src = "http://www.nlotto.co.kr//img/common_new/ball_<%= oneNum %>.png">
+
+<% end %>
+
+<h1> 결과는 <%= @result %> 입니다. </h1>
+
